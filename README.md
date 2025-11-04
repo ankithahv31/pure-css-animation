@@ -24,7 +24,7 @@ It’s a creative exploration of CSS properties such as `@keyframes`, `transitio
 
 ## 🖼️ Demo
 
-
+<img width="1909" height="962" alt="Image" src="https://github.com/user-attachments/assets/626eaf6d-4fa9-4819-bf63-6296d624d3af" />
 
 
 ---
