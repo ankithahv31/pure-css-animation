@@ -1,0 +1,209 @@
+
+.container2 {
+  
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+}
+
+#road {
+    height: 500vh;
+  border: 2px solid black;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(12, 12, 12);
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+/* White divs inside the road */
+.road-line {
+  width: 20%;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#car-img {
+  position: absolute;
+  bottom: 60%; /* places car above the road */
+  left: 90%;
+  width: 250px;
+  height: 200px;
+  background-image: url("C:/Users/Amshik/Desktop/WebTec/CSS/Animation1/images/car-removebg-preview.png");
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode:hard-light; 
+  animation-name: car;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes car {
+  0% {
+    
+    left: 100%;
+  }
+  100% {
+    left: 150px; /* move out of view */
+  }
+}
+
+.container1 {
+
+  width: 100%;
+  height: 250px; /* adjust as needed for your sky */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* keep items toward the top */
+ background-image: url("images/sky.jpg");
+  
+  position: relative; /* for positioning elements inside */
+}
+
+/* Example for sun positioning */
+#sun {
+  position: absolute;
+  bottom: 30px;          
+  right: 8%;          
+  width: 100px;        
+  height: 100px;       
+  background-image: url("images/Sun.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+ animation-name: sun;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes sun{
+    0%{
+        bottom: 0px;
+        top: 200px;
+    }
+    100%{
+        bottom: 200px;
+        top: 0%;
+        background-image: url("images/moon.png");
+    }
+}
+
+#cloud {
+  position: absolute;
+  top: 20px;          
+  left: 10%;          
+  width: 250px;        
+  height: 200px;       
+  background-image: url("images/cloud.png");
+      
+  background-size: cover;
+  background-position: center;
+  animation-name: cloud;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}  
+@keyframes cloud {
+  0% {
+    left: 0%;        
+  }
+  50% {
+    left: 30%;       
+  }
+  100% {
+    left: 0%;        
+  }
+}
+
+#crow{
+   position: relative;
+  top: 20px;          
+  left: 10%;          
+  width: 200px;        
+  height: 200px;       
+  background-image: url("images/crow-removebg-preview.png");
+      
+  background-size: cover;
+  background-position: center;
+  animation-name: crow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  mix-blend-mode: normal; 
+  
+}
+@keyframes crow {
+  0% {
+    bottom:50px;
+    left: 50px;        
+  }
+  40% {
+   
+    top:100px;
+    left: 150px;       
+  }
+  60% {
+    bottom: 100px;
+    right: 150px;        
+  }
+  80% {
+    top:50px;
+    left: 200px;       
+  }
+}
+
+.container3 {
+ 
+  width: 100%;
+  height: 250px; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+ background-color: skyblue;
+  position: relative; 
+  background-image: url("images/river.jpg");
+   animation-name: river;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  
+}
+@keyframes river {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
+#boat {
+  position: absolute;
+  bottom: 20px;          
+  left: 10%;          
+  width: 250px;        
+  height: 200px;       
+  background-image: url("images/boat-removebg-preview.png");
+    mix-blend-mode: normal ;  
+  background-size: cover;
+  background-position: center;
+  animation-name: boat;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  
+}   
+@keyframes boat {
+  0% {
+    left: 0%;        
+  }
+  50% {
+    left: 30%;       
+  }
+  100% {
+    left: 0%;        
+  }
+}   
+
+
+
